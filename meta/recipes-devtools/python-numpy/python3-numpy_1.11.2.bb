@@ -69,6 +69,8 @@ CONFIGFILESURI_mipsarchn32el = " \
 
 S = "${WORKDIR}/numpy-${PV}"
 
+DISTUTILS_BUILD_ARGS += "${PARALLEL_MAKE}"
+
 inherit setuptools3
 
 # Make the build fail and replace *config.h with proper one
